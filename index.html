@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Supply Chain Platform</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  p.slogan {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .icon-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .icon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  .icon-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Supply Chain Platform</h1>
+<p class="slogan">Our goal is serving the pharmacies to the maximum</p>
+
+<div class="icon-grid">
+  <!-- أيقونة 1: المشاريع الجارية -->
+  <div class="icon-card" onclick="openLink('https://example.com/task1')">
+    <img src="https://img.icons8.com/fluency/96/project.png" alt="Project 1">
+    <div>المشاريع الجارية</div>
+  </div>
+
+  <!-- أيقونة 2: المهام اليومية -->
+  <div class="icon-card" onclick="openLink('https://docs.google.com/spreadsheets/d/1AWBwdkwa3VXU_4_5MXTXsugdSnECJgxT9SDc2KaILiQ/edit?usp=sharing')">
+    <img src="https://img.icons8.com/fluency/96/checklist.png" alt="Project 2">
+    <div>المهام اليومية</div>
+  </div>
+
+  <!-- أيقونة 3: المشاريع المستقبلية -->
+  <div class="icon-card" onclick="openLink('https://example.com/task3')">
+    <img src="https://img.icons8.com/fluency/96/task.png" alt="Project 3">
+    <div>المشاريع المستقبلية</div>
+  </div>
+</div>
+
+<script>
+  // دالة لفتح أي رابط في تبويب جديد
+  function openLink(link) {
+    window.open(link, '_blank');
+  }
+</script>
+
+</body>
+</html>
